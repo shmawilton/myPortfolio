@@ -3,10 +3,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wilton Onyango - Full Stack Developer Portfolio showcasing web development projects and expertise">
+    <meta name="keywords" content="web developer, full stack developer, Laravel, React, PHP, JavaScript">
+    <meta property="og:title" content="Wilton Onyango - Full Stack Developer">
+    <meta property="og:description" content="Portfolio showcasing web development projects and expertise">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&family=Russo+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>Wilton Onyango</title>
     <link rel="stylesheet" href="default.css">
@@ -17,23 +23,34 @@
         <div class="main-container">
             <div class="greeting-wrapper">
                 <h1>Hi, I'm Wilton Onyango</h1>
+                <div class="greeting-subtitle">
+                    <span class="typing-text">Full Stack Developer</span>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/wilton-onyango-5a29b8218" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/shmawilton" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
 
             <div class="intro-wraper">
                 <div class="nav-wraper">
                     <div class="dots-wrapper">
-                        <a href="#AboutMe"><div id="dot-1" class="browser-dot"></div></a>
-                        <a href="#pastProjects"><div id="dot-2" class="browser-dot"></div></a>
-                        <a href="#GetIntouch"><div id="dot-3" class="browser-dot"></div></a>   
+                        <a href="#AboutMe"><div id="dot-1" class="browser-dot" title="About Me"><i class="fas fa-user"></i></div></a>
+                        <a href="#pastProjects"><div id="dot-2" class="browser-dot" title="Projects"><i class="fas fa-code"></i></div></a>
+                        <a href="#GetIntouch"><div id="dot-3" class="browser-dot" title="Contact"><i class="fas fa-envelope"></i></div></a>   
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">
-                            <div class="popup" onclick="myFunction()">Contact
-                                <span class="popuptext" id="myPopup">Phone: +254708314239 <br>
-                                    Email: 246wiltononyango@gmail.com
+                        <li><a href="#" class="nav-link">
+                            <div class="popup" onclick="myFunction()">
+                                <i class="fas fa-address-card"></i> Contact
+                                <span class="popuptext" id="myPopup">
+                                    <i class="fas fa-phone"></i> +254708314239 <br>
+                                    <i class="fas fa-envelope"></i> 246wiltononyango@gmail.com
                                 </span>
-                            </div></a></li>
+                            </div>
+                        </a></li>
                     </ul>
                 </div>
 
@@ -59,9 +76,8 @@
                             <div class="corner" id="corner-bl"></div>
                             <div class="corner" id="corner-br"></div>
                             <h3>What I Do</h3>
-                            <p>I am a self taught developer mainly based on web development. I still continue learning throught extensive
-                                resources on the Internet.
-                            </p>
+                            <p>I am a Full Stack Developer with 4 years of experience specializing in modern web technologies. My expertise spans across both frontend and backend development.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -73,45 +89,272 @@
         <div class="main-container">
             <div class="about-wrapper">
                 <div class="about-me">
-                    <h4>More about me</h4>
+                    <div class="about-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h4>More About Me</h4>
+                    </div>
 
-                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                    <div class="about-content">
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="about-text">
+                                <h5>Passion for Development</h5>
+                                <p>I am a dedicated full-stack developer with a passion for creating innovative solutions. My journey in web development is driven by continuous learning and the desire to build impactful applications.</p>
+                            </div>
+                        </div>
 
-                    <p>While I keep busy teaching courses. I still take Interviews in search of a great team & projects that interest me.</p>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="about-text">
+                                <h5>Teaching & Mentoring</h5>
+                                <p>I believe in sharing knowledge and empowering others. Through teaching and mentoring, I help aspiring developers master the art of web development while staying current with industry best practices.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="about-text">
+                                <h5>Career Goals</h5>
+                                <p>I'm actively seeking opportunities to join dynamic teams where I can contribute my expertise in Laravel and React development. I'm particularly interested in projects that challenge my skills and allow for continuous growth.</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <hr>
                     
-                    <h4>TOP EXPERTISE</h4>
+                    <h4><i class="fas fa-star"></i> TOP EXPERTISE</h4>
                     
                     <p>Fullstack developer with primary focus on Laravel + React:
-                        <a target="_blank" href="resume.pdf">Download Resume</a>
+                        <a target="_blank" href="resume.pdf"><i class="fas fa-download"></i> Download Resume</a>
                     </p>
                     
                     <div id="skills">
-                        <ul>
-                            <li>Java</li>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                        </ul>
-                    
-                        <ul>
-                            <li>Google API</li>
-                            <li>JS Charts</li>
-                            <li>Bootstrap</li>
-                            <li>HTML/CSS</li>
-                        </ul>
+                        <div class="expertise-grid">
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Programming Languages</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Java</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>JavaScript</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>PHP</span>
+                                            <span class="skill-percentage">88%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-layer-group"></i>
+                                    <h5>Frameworks & Libraries</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>React</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Laravel</span>
+                                            <span class="skill-percentage">88%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Bootstrap</span>
+                                            <span class="skill-percentage">92%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h5>Tools & APIs</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Google API</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>JS Charts</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Git</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-database"></i>
+                                    <h5>Database & Cloud</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>MySQL</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>MongoDB</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>AWS</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <h5>UI/UX Design</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>User Research</span>
+                                            <span class="skill-percentage">90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Wireframing & Prototyping</span>
+                                            <span class="skill-percentage">88%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Figma/Adobe XD</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="expertise-category">
+                                <div class="category-header">
+                                    <i class="fas fa-vial"></i>
+                                    <h5>Testing & Deployment</h5>
+                                </div>
+                                <div class="skill-items">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Unit & Integration Testing</span>
+                                            <span class="skill-percentage">80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>CI/CD</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span>Docker</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     
-                </div>
-                <div class="social-links">
-                    <img id="social-link" src="images/follow.png" alt="">
-                    <h3>Find Me on LinkedIn & Github</h3>
-
-                    <a href="">LinkedIn: @wiltonOnyango</a> <br>
-                    <a href="">Github: @shmawilton</a>
                 </div>
                 
             </div>
@@ -122,46 +365,34 @@
         <div class="main-container">
             <h3 style="text-align: center;">Some of my past Projects</h3>
 
-            <div class="post-wrapper">
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="images/codebootcamp.png" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Code Bootcamp</h6>
-                            <p class="post-intro">It includes aspects such as web design, web publishing, web programming, and database
-                                management. It is the creation of
-                                an application that works over the internet i.e. websites.</p>
-                                <a target="_blank" href="http://codershub.great-site.net/codershub/mainPage.php">Read More</a>
-                        </div>
+            <div class="project-grid">
+                <!-- Bubble Ninja Laundry -->
+                <div class="project-card">
+                    <img class="project-img" src="images/Bubble ninja logo.svg" alt="Bubble Ninja Laundry Logo">
+                    <div class="project-content">
+                        <h6 class="project-title">Bubble Ninja Laundry</h6>
+                        <p class="project-desc">A modern laundry service platform offering seamless online booking, order tracking, and customer management. Focused on user-friendly UI and efficient workflows for both customers and staff.</p>
+                        <a target="_blank" href="https://www.bubbleninja.info/" class="project-link"><i class="fas fa-external-link-alt"></i> Visit Site</a>
                     </div>
                 </div>
 
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="images/frontendBootcamp.png" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Frontend bootcamp</h6>
-                            <p class="post-intro">Front End Development: The part of a website that the user interacts with directly is
-                                termed the front end. It is also
-                                referred to as the ‘client side’ of the application. It includes everything that users experience directly:
-                                text colors
-                                and styles, images, graphs and tables, buttons, colors, and navigation menu.</p>
-                                <a target="_blank" href="http://codershub.great-site.net/codershub/bootcamp/frontend.html">Read More</a>
-                        </div>
+                <!-- Sasa Tech Africa -->
+                <div class="project-card">
+                    <img class="project-img" src="images/sasatech-logo.svg" alt="Sasa Tech Africa Logo">
+                    <div class="project-content">
+                        <h6 class="project-title">Sasa Tech Africa</h6>
+                        <p class="project-desc">UI/UX Designer at Sasa Tech Africa, contributing to digital solutions for MIS, ERP, Blockchain, and Business Automation. Focused on intuitive and engaging user experiences for African enterprises.</p>
+                        <a target="_blank" href="https://sasatech.vercel.app/team/wilton-onyango" class="project-link"><i class="fas fa-external-link-alt"></i> My Team Profile</a>
                     </div>
                 </div>
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="images/backendBootcamp.png" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Backend Bootcamp</h6>
-                            <p class="post-intro">Back-end development covers server-side web application logic and integration and
-                                activities, like writing APIs,
-                                creating libraries, and working with system components instead of frontend development, which focuses on
-                                customer-facing
-                                services and programs.</p>
-                                <a target="_blank" href="http://codershub.great-site.net/codershub/bootcamp/backend.html">Read More</a>
-                        </div>
+
+                <!-- GitHub Projects -->
+                <div class="project-card">
+                    <img class="project-img" src="images/myPhoto.jpg" alt="GitHub Projects">
+                    <div class="project-content">
+                        <h6 class="project-title">Open Source & Personal Projects</h6>
+                        <p class="project-desc">Explore a wide range of web, automation, and experimental projects on my GitHub. Includes full-stack apps, UI experiments, and more.</p>
+                        <a target="_blank" href="https://github.com/shmawilton" class="project-link"><i class="fab fa-github"></i> View GitHub</a>
                     </div>
                 </div>
             </div>
@@ -174,24 +405,29 @@
 
             
             <form action="" id="contact-form">
-                
-                <label>Name</label>
-                <input class="input-field" type="text" name="name">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> Name</label>
+                    <input class="input-field" type="text" name="name" required placeholder="Your name">
+                </div>
 
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
+                <div class="form-group">
+                    <label><i class="fas fa-heading"></i> Subject</label>
+                    <input class="input-field" type="text" name="subject" required placeholder="Message subject">
+                </div>
 
-                <label>Email</label>
-                <input class="input-field" type="text" name="emai">
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> Email</label>
+                    <input class="input-field" type="email" name="email" required placeholder="Your email address">
+                </div>
 
-                <label>Message</label>
-                <textarea style="color: black;" placeholder="Type your message here..." class="input-field" type="text" name="message">
-                </textarea>
+                <div class="form-group">
+                    <label><i class="fas fa-comment"></i> Message</label>
+                    <textarea class="input-field" name="message" required placeholder="Type your message here..."></textarea>
+                </div>
 
-                <input id="submit-btn" type="submit" value="Send">
-
-
-                
+                <button type="submit" id="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
             </form>
         </div>
     </section>
